@@ -1,0 +1,1169 @@
+<html>
+
+  <head>
+    <style type="text/css">
+      /* CLIENT-SPECIFIC STYLES */
+      #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+      .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+      body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+      table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+      img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+      /* RESET STYLES */
+      body{margin:0; padding:0;}
+      img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+      table{border-collapse:collapse !important;}
+      body{height:100% !important; margin:0; padding:0; width:100% !important;}
+  .pulse{
+       animation: pulse 1s forwards;
+       -webkit-animation: pulse 1s forwards;
+  }
+  @keyframes pulse {
+       0% {
+            transform: scale(3);
+       }
+       100% {
+            transform: scale(1);
+       }
+  }
+  @-webkit-keyframes pulse {
+       0% {
+            -webkit-transform: scale(3);
+       }
+       100% {
+            -webkit-transform: scale(1);
+       }
+  }
+  .hover:hover {opacity: 1.0 !important; -webkit-transition: 0.75s ease-in-out; cursor: pointer;}
+       #f3 {
+      -webkit-animation-name: fade;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration:12s;
+      -webkit-animation-delay: 3s;
+      animation-name: fade;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+  }
+  #f4 {
+      -webkit-animation-name: fade;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration:18s;
+      -webkit-animation-delay: 6s;
+      animation-name: fade;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+  }
+  #f5 {
+      -webkit-animation-name: fade;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration:10s;
+      animation-name: fade;
+      animation-iteration-count: infinite;
+      animation-duration: 12s;
+  }
+  @-webkit-keyframes fade {
+      0% {opacity: 1;}
+      45% {opacity: 0;}
+      75% {opacity: 0;}
+      100% {opacity: 1;}
+  }
+  @keyframes fade {
+      0% {opacity: 1;}
+      45% {opacity: 0;}
+      75% {opacity: 0;}
+      100% {opacity: 1;}
+  }
+       @media screen and (max-width: 525px) {
+            table[class="wrapper"]{
+        width:100% !important;}
+      td[class="logo"]{
+        text-align: left;
+        padding: 20px 0 20px 0 !important;}
+        td[class="logo"] img{
+        margin:0 auto!important;}
+          td[class="mobile-hide"]{
+              display:none !important;}
+          img[class="mobile-hide"]{
+              display: none !important;}
+            img[class="img-max"]{
+              width: 100% !important;
+              max-width: 100% !important;
+              height:auto !important; }
+          img[class="img-70"]{
+              max-width: 70%;
+              height:auto;}
+            table[class="responsive-table"]{
+                 width:100%!important;}
+            td[class="padding"]{
+                 padding: 10px 5% 10px 5% !important;}
+            td[class="padding2"]{
+                 padding: 10px 5% 10px 5% !important;
+              text-align: left;}
+          td[class="padding7"]{
+              padding: 10px 5% 10px 5% !important;
+              text-align: center;}
+          td[class="padding8"]{
+              padding-left: 8px !important;}
+          td[class="padding3"]{
+              padding: 10px 5% 35px 5% !important;}
+          td[class="padding4"]{
+              padding: 0 5% 0 5% !important;}
+          td[class="padding5"]{
+             padding: 10px 5% 3px 5% !important;}
+          td[class="padding6"]{
+              padding: 0px 5% 0px 5% !important;}
+          td[class="padding-top-no"]{
+             padding-top: 0px !important;}
+            td[class="section-padding"]{
+                 padding: 50px 15px 50px 15px !important;}
+            td[class="arrow-padding"]{
+                 padding: 0px 15px 50px 15px !important;}
+          td[class="section-padding2"]{
+              padding: 25px 15px 50px 15px !important;}
+          td[class="section-padding3"]{
+              padding: 20px 15px 0 15px !important;}
+              td[class="section-padding4"]{
+              padding: 0 !important;}
+            td[class="mobile-paragraph"]{
+                 font-size:16px!important;}
+            td[class="width6"]{
+                 width: 10% !important;}
+            td[class="mobile-show"]{
+                 display:block!important;}
+          td[class="no-pad1"]{
+              padding: 0!important;}
+          table[class="full-width"]{width: 100% !important;}
+       }
+      @media screen and (-webkit-min-device-pixel-ratio:0) {
+        td[class="img-hide"] {display: none !important;}
+        div[class="display-block"] {display: block !important;}
+        td[class="display-block"] {display: block !important; width: 5% !important;}
+        table[class="full-width"]{width: 100% !important;}
+        td[class="no-pad"]{padding:0 !important;}
+        td[class="section-padding4"]{background-color: #000000 !important;}
+        img[class="img-max"]{width: 100% !important; max-width:100% !important; height: auto !important; display: block !important; min-width: 0px !important; }
+        img[class="pulse"]{width: 100% !important; max-width:100% !important; height: auto !important; display: block !important; min-width: 0px !important; }
+        img[class="img-max-hide"]{display: none !important; }
+      }
+      @media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 525px) {
+        td[class="display-block"] {display: none !important;}
+        td[class="width6"]{
+              width: 10% !important;}
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0;">
+    <div style="line-height:1px;font-size:1px;color:#FFFFFF;display:none;">Do you &hearts; email? Join the club. Literally. Chat with the best minds in email
+      design, get help with code problems, and access a growing library of articles.</div>
+    <table
+    border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td bgcolor="#333333">
+          <div align="center" style="padding: 0px 15px 0px 15px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="wrapper">
+              <tr>
+                <td style="padding: 20px 0px 30px 0px;" class="logo">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td bgcolor="#333333" width="138" align="left">
+                        <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/">
+                          <img alt="Litmus" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/logoheader.gif"
+                          width="138" height="59" style="display: block; font-family: Georgia; font-style: italic; color: #61bdb2; font-size: 19px;"
+                          border="0">
+                        </a>
+                      </td>
+                      <td bgcolor="#333333" width="72" class="mobile-hide">&nbsp;</td>
+                      <td bgcolor="#333333" width="300" align="right" class="mobile-hide">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td align="right" style="padding: 0 0 5px 0; font-size: 14px; font-family: Arial, sans-serif; color: #555555; text-decoration: none;"><span style="color: #666666; text-decoration: none;">Do you &hearts; email? Join the club. Literally.</span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="right">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td align="right" style="padding: 0 3px 0 0;">
+                                    <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-xx-xxxxx-xxxxxxxxx-x/">
+                                      <img src="http://i10.createsend1.com/ei/y/89/1B4/A9E/052117/icon-twitter.gif"
+                                      alt="" border="0" width="25" height="14" style="display: block">
+                                    </a>
+                                  </td>
+                                  <td style="padding: 0 15px 0 0;" align="left">
+                                    <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-xx-xxxxx-xxxxxxxxx-x/" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 24px; color: #555555; text-decoration: none;">Tweet this</a>
+                                  </td>
+                                  <td align="right" style="padding: 0 3px 0 0;">
+                                    <a href="http://xxxxxx.xxxxxxxxxxxxxxxxx.xxx/x-xxxxxxxxx-X0XXXXXX-xxxxx-x-x">
+                                      <img src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/icon-email.gif" alt=""
+                                      border="0" width="21" height="14" style="display: block">
+                                    </a>
+                                  </td>
+                                  <td align="left">
+                                    <a href="http://xxxxxx.xxxxxxxxxxxxxxxxx.xxx/x-xxxxxxxxx-X0XXXXXX-xxxxx-x-x" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height: 24px; color: #555555; text-decoration: none;">Forward this</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td bgcolor="#797c8c" align="center" style="padding: 0;" class="section-padding4">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="responsive-table">
+              <tr>
+                <td style="padding: 50px 0 0 0;" align="center" class="no-pad">
+                  <table width="600" border="0" cellspacing="0" cellpadding="0" class="full-width">
+                    <tr>
+                      <td bgcolor="#000000">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00xx0000x000x00x00000x0x0xx0x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/e5ca3be8031f398759f139593e2db128.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00x0xx000000000x000x00xxxxxxx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/39bf67f1ec47bb62f8dfe5c419f1421f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x0xx0000x0xx000000xxx0000x000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/8248914b344a305dca3b4e3c906f0cf5.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000x0x0x000x0x0x00000000xx0xx0xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/6490805f58517ca7af0b1033bea3f3e9.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xxx0000x000x0xxxxx0x0x000x0x0000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/0fc7fdfa2fd9d3bc40b2d77cb044959f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00x00xx000000xx0x00x0x00x0000000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/6e9a0cc5285370825b8b8f066904c079.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000xxx00xx0x000000xx0x00x00xx0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/10b37955b30ce98703698fa90edecf6e.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00x000x0xxx000000x000x00x0xxx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/44666fd8c89c921aadcd93ead5234cd8.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000x00000x0xx0000xxx000xx000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/9f35a18fc47990dee89844cd75963214.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000x0xxx0x00x0xxx0x0x000xxx00x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/10fa2d684fd186f2a746f6544f7f6ec5.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00000x0x00x00x000000xx00000x0xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/6ade6f40014ed9672dc63425a52832e4.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xxxx0000x0x00x0xx0xx0000xxx0x00x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/8eaf7eb17f6b0d85aba7739d2a2c0f42.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x000x000x000x00x00x0x00x000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/7e8eda381f21f5b64f30983c16aab3b6.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xxxxxx00xx0x000xx0x0x00xx00x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/8b5acccb3259dd803dc92a3595eb0f43.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xxx000xxx0xx0xx00xxx00000xx00x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/eb0fa17074183bbdf1dcc4f3bbea15dd.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x00xxx0xx00xxx00xx0000x00x0x0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/935bb96afdf987dcdf348a64714fd9ed.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0xx0x0000xx00x00x00x00x0x0xxx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/272106a74f169c513b0ca443be231dcd.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xxxx00x0x00x0x0x0xx0xxxx00x0x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/cbcda417f596efb227c4fe8ec9a9b91c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00x00xx00x000xx0000x000000xx0x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/843c04e26dcc2d66376132185af790c2.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00x0x00x00xxxx0x000000x00x000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/1af79cc5989d9c82ce35f16f5d97a83e.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000xxx00000x0x0xx0xxxx0xxx00000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/28b2aa75112aeb699173de9f25128c16.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000x0x0000x00x0x0x0xxx00x0x000xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/e56b9e61619716c7b8207ca6151f23a2.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00x00x0xx0000000xx0xx0000000000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/3b39a1b0893869eaa4751f77f5999d5a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00000x0x0000x00000x000xx0x000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/f0264329577e6c07326c13eb8856e063.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00000x0x000x0xxxx0x0000x00x000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/bdc7708ba7747bed86642d32cea1c701.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00xx000x00000000000x00x000000000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/a99d3ad8d9dbfc4c05f24a7144d8e19e.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00xx0xx00x000xxx0xx00x0000xxx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/31091015b82a011f5fedf9499b171767.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00x00x000x00xx0x0x00x0xx00000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/09993fad0c33571ca6dec5672a093f7c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x000x000xx0x0000xxxx000xxx0000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/cf9ca7a4587de5b6f413c751523863c9.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000x000xxx0000xx0x0x0000x00x0x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/7fba25cdc19172f770b475fc0c0d8a0a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.0-0.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.0-1.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.0-2.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xxx00000x0xx00xx00000xx00000xx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/14f57b1496c984ceb51915884c03a141.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xxx000000x000000x000xxx000xx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/5eef485a98f8e6c415ac5112e9088271.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000x0x0xx0xx000x00xxx00000x0x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/94b1f411d47d5307e88d270c5c87b98a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00000xxxx00xx000xx0x0000xx00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/f3a75e2ca1f37680dd123d0fcd316a8d.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xxx00x000x0000x0x0xx00x0xxx0000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/18a93bbb03f655798da81d7870d4ab9c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0x00x000x00000000000xx000000x0.xxx); background-size: cover; opacity: 0.5"
+                              class="hover">
+                                <img id="f3" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/22b0432c25f4f3efae6e7a846131473d.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000x00x000000x00000000xx0000xxx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/38477b3955a66c15cda674e9a696281a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000x0xx0xx0000000xx0x000xx00000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/8d8b30602b201c2a29bf7f26ca7fd732.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xxxxx00000x0000x0000000x00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i8.createsend1.com/ei/y/89/1B4/A9E/052117/d7ba4b7b0341ad78fdb31650b3939bcb.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx0x0000x00x00xx00xx00x00x00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i10.createsend1.com/ei/y/89/1B4/A9E/052117/5036e4144ae2a9ec839efdb3a0efaabd.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0xx0xx000000x00xx0xx00000x00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/71b1f74f8db7abce9235c221ae5a4cb8.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00x000x0xx0x000x0x00000000000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/25f2da83bfac70761c1b3aa03a29a5c0.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx0x00x00000xx00000xxx000xx0000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/58c47bb4ac54842299eae7ef723882c9.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xxx0x000x0xx0xx000xxxx0xxxxx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i8.createsend1.com/ei/y/89/1B4/A9E/052117/cd9abdbd45531ceff2c74e7d626f1623.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000000x000x0x0x0xx0x00x000000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i10.createsend1.com/ei/y/89/1B4/A9E/052117/0942ecd7d8db7b05edb183aad85b5572.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00x0x00xxx0x0xx0x0x00x000x00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/0e1fa52160994696fba858bcc3a122ce.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xx000x00000x0x0x000x00x000000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/a67fcb603e5947501cd746eb69c41446.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.1-0.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.1-1.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.1-2.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x000000x0x0xx0x0000xx0xx000xxx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/764561f4eb0e5001c56d3dbe8376316f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000xxx0x0xx000x0x00xx0x0000x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/e711c1d732a863d4a31221da965f870f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00000xx00xx000xxx0x0x00000000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/fa2add3351ead84a75b8aaa3a420539c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0000xx0000x00000x0x000xxx0xxx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/5f32bd58e21a110451c30ec28b3fa6b5.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000000x0xx00x0000x000x0x000000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/811a20a4cf90a6acf358014d9e57e32f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000x0000000xx0000000000x000xx0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/be39aacd01c735137c493aeb965110e5.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000xx000x0x000xx0x00x0x000xxx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/6e4f5ed703cd03bf7dd1c48e84ee5891.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00x000xxxx0x00x000000000000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/a9496bfd1e94e5354903491e1c106c62.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00000x00xx0xx00x0x0000x0x000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i8.createsend1.com/ei/y/89/1B4/A9E/052117/8e404d37485446444c8256195690ca34.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx0xxx0xxx00x0x000xx000xxx0x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/d7691169d0410dbc5816c2c4d05bcb7a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx000000000000000x00x000x0xx0000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/226aa58b3fdcae7e7b7da6f7e21240a0.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xxx000xxx0x000x0xx00000x00x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/b67b5e8cacd2dbb94e829c6ccf06dea1.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x000x00x0000000000000x00xxx0x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/9c021b6619cbffef4a05e3ffabce7948.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x00000x0x00x0xx000x0x0xx0x000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i10.createsend1.com/ei/y/89/1B4/A9E/052117/6b224f6ee09915f14d8ea1ec3c2f4590.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00x0000x0x00x0x00xx0xx0xx0000xx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/1e4f5f0d3d5440594669239c76af26d4.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00x0x0000x0x00x0xxx0000000x00x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/26b30c7682bbbe3fac6446a2b00941ac.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x0000xxx00x00x0x0x000000x00x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/7deb65a74fc00bc867d6813fbbf964a2.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.2-0.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.2-1.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <img src="https://gravatar.litmus.com/dd.subscriptions@gmail.com.2-2.png" width="60"
+                              height="60" style="min-width: 60px; display: block;" class="pulse">
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx000xx0xxxxxx00x000000xxxx00xxx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/ed7d01dbfcb2a23db7f761880f65037f.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x0x000xx0000x0x00x000x0000xxx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/3300f69fcfb83589e73d86fcad57ff13.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000x000000x00000x0x0x0xx000xx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/c89c81a14a15a4d418d2275b045142f2.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xx00xx00x0000xx0x00x0xxx0x0xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/9de41086040e14d1fa59cc782e60e99e.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx000xx00xx0000xxx0x00000x0xx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/8d0b3fa2faf2be3b6b6f33234835d26c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00000xx00x0x00x000000xx000x000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/d07bd3be0de50cec9a180cc2318d52cc.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx00xx0x000x0000000xxx0xx0xxxxx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i8.createsend1.com/ei/y/89/1B4/A9E/052117/fb66714e55d2c213a77f250765f43e49.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x000x000x0x00x00x0x00xx000x0xx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/c08ddd8863d7d91ec43fd48f3d3db31c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000xx00xx0xx00000xx0000x00x00x0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i4.createsend1.com/ei/y/89/1B4/A9E/052117/7b73911e753a0a2ddb1eaad6e963d619.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000x000x00xxx00x0xx00x0000000xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i6.createsend1.com/ei/y/89/1B4/A9E/052117/a56bd9fc1b82a2c4485fba0bd2b407cc.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xx00xx000xxx00x00xx00x0xx00x0x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/fcd6b94214cc9c7c5f571333ad9c3bb1.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00000000000000x0x00000xx000xx000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i2.createsend1.com/ei/y/89/1B4/A9E/052117/08586ce62b0d4bedf902e69e021c13d3.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00xxx000xxx000x0xx0x000x00000000.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/b1934a52a58e25c9e028d7e73d372a72.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000x00x00x0x0x0000xx000xxx0xxx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/de74ab4087da41b40892ef087f903b2c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x00xxxxx00x0xx0x000xxx00x0x000x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/a264117d5743731025b0b55f75250c86.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/00x0000xx00x0x00000xx0000x00x0x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/7a27fe0b209ab7a7e52d14acb028eee6.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0x0000x0x0xx0x0x0xxxxx00x0x00x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/92534e9d4181c1f51c0fa13c3ed9384d.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000000x0x0xxx000xxx00xx0xxx0xxx0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/bda47966829d6c20d9ac833dbea30f0a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0xxxx00000xxx000x000000xx0000x00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/a82f410d5362c082e2cac3dec48cfbd3.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x000xxx00x00x00x0xxx0x000000000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/7beb3a2c86cf71070269afda95897d04.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0xx0x000x00x000x000x0x00x00000x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/7d5d46431095e7735d28895cf8596706.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" class="width6">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/xx0xx0x0000x00x000x00000xx0x0x0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/43da0307752bf635c44c33dcdd962a2e.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x00xx0000x0000xx0x0x000xxx0xx00.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/fc24c60063a613e40ace8bd6a084c1e6.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x00.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/000xx000x0xx000xxxxx00x0xx0x00x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/ae4b265b776d003712b72a6bb60b021a.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x0000xx0000000x000000x00x00x0x.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f5" src="http://i3.createsend1.com/ei/y/89/1B4/A9E/052117/24382fa83d4f666ab0b89f9acdf9d39c.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/0x0000xx00x0000x00xx000xxx0xx0xx.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f4" src="http://i5.createsend1.com/ei/y/89/1B4/A9E/052117/ca7bf54083140f63e8b1495c983fdafc.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                            <td width="60" style="display: none;" class="display-block">
+                              <div style="background: url(http://x0.xxxxxxxxxx0.xxx/xx/x/00/0X0/X0X/000000/x0x0000000x000xxx0000x0x00x0x0x0.xxx); background-size: cover; opacity: 0.5;"
+                              class="hover">
+                                <img id="f3" src="http://i7.createsend1.com/ei/y/89/1B4/A9E/052117/7443af8fdd717d9abd85c320b8d6aec6.jpg"
+                                width="60" height="60" style="min-width: 60px; display: block !important;" class="img-max">
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#797c8c" align="center" style="font-size: 13px; line-height: 16px; color: #333955; font-family: Helvetica, arial, sans-serif; padding-top: 10px;">Spot yourself?
+                  <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/"
+                  style="color: #333955;" target="_blank">Tweet about it</a>&rarr;</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td bgcolor="#797c8c" align="center" style="padding: 50px 0 70px 0;" class="section-padding2">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <table cellspacing="0" cellpadding="0" class="responsive-table" border="0">
+                          <tr>
+                            <td width="100%" align="left" valign="top">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                <tr>
+                                  <td align="center" style="font-size: 25px; padding: 0; font-family: Helvetica, Arial, sans-serif; color: #ffffff;"
+                                  class="padding">Join us in the Litmus Community!</td>
+                                </tr>
+                                <tr>
+                                  <td align="center" style="padding: 20px 0 40px 0; font-size: 17px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #333955;"
+                                  class="padding3">Email marketing is hard. From design to deliverability, there are countless questions
+                                    that need answering. The Litmus Community is the place to get those questions answered.</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;"
+                                    class="responsive-table">
+                                      <tr>
+                                        <td style="padding: 0; font-size: 17px; line-height: 28px; font-family: Helvetica, Arial, sans-serif; color: #ffffff;"
+                                        align="center" class="padding2">
+                                          <table border="0" cellspacing="0" cellpadding="0" width="100%" class="responsive-table">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" bgcolor="#e8703d" style="padding: 18px; -webkit-border-radius:3px; border-radius:3px; border-bottom: 5px solid #AA5517;"
+                                                align="center">
+                                                  <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none;"
+                                                  target="_blank"><b>Access the Community Now &rarr;</b>
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td bgcolor="#ebeae8" align="center" style="padding: 70px 0 70px 0;" class="section-padding">
+            <table border="0" cellpadding="0" cellspacing="0" width="500" class="responsive-table">
+              <tr>
+                <td>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td>
+                        <table cellspacing="0" cellpadding="0" class="responsive-table" border="0">
+                          <tr>
+                            <td width="100%" align="left" valign="top">
+                              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="responsive-table">
+                                <tr>
+                                  <td align="center" style="padding: 0 0 40px 0; font-size: 17px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;"
+                                  class="padding3">The Litmus Community is the best place for email marketers to learn more about
+                                    the theory and practice of email marketing.
+                                    <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/"
+                                    target="_blank" style="font-weight:bold;color: #666666;">Log in now</a>to access:</td>
+                                </tr>
+                                <tr>
+                                  <td class="padding2">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td>
+                                          <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                              <td align="left" bgcolor="#ffffff" style="padding: 25px; color: #666666; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2); box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+                                                  <tr>
+                                                    <td class="mobile-hide">
+                                                      <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" target="_blank">
+                                                        <img src="http://i8.createsend1.com/ei/y/89/1B4/A9E/052117/discussions.gif" width="100"
+                                                        height="100" alt="discussions" border="0">
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="right" width="330" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;"
+                                                class="responsive-table">
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 18px; line-height: 36px;"> <b><a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" style="color: #818f98; text-decoration: none;" target="_blank">Discussions &rarr;</a></b>
+
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 16px; line-height: 24px; padding-top: 0;">Start a discussion around any topic and learn from the best minds in email marketing.</td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="padding2">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td style="padding: 25px 0;" class="no-pad1">
+                                          <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                              <td align="left" bgcolor="#ffffff" style="padding: 25px; color: #666666; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2); box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="330" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;"
+                                                class="responsive-table">
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 18px; line-height: 36px;"> <b><a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" style="color: #818f98; text-decoration: none;" target="_blank">Code Questions &rarr;</a></b>
+
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 16px; line-height: 24px; padding-top: 0;">Troubleshooting a problem with your markup? Ask a code question and let the Community
+                                                      help out.</td>
+                                                  </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="right" width="100" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+                                                  <tr>
+                                                    <td class="mobile-hide">
+                                                      <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" target="_blank">
+                                                        <img src="http://i9.createsend1.com/ei/y/89/1B4/A9E/052117/code-questions.gif"
+                                                        width="100" height="100" alt="code questions" border="0">
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="padding2">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td>
+                                          <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                              <td align="left" bgcolor="#ffffff" style="padding: 25px; color: #666666; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2); -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2); box-shadow: 0 1px 3px rgba(0,0,0,0.2);">
+                                                <table cellspacing="0" cellpadding="0" border="0" align="left" width="100" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;">
+                                                  <tr>
+                                                    <td class="mobile-hide">
+                                                      <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" target="_blank">
+                                                        <img src="http://i10.createsend1.com/ei/y/89/1B4/A9E/052117/learning-center.gif"
+                                                        width="100" height="100" alt="learning center" border="0">
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                                <table cellspacing="0" cellpadding="0" border="0" align="right" width="330" style="border:none; mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse;"
+                                                class="responsive-table">
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 18px; line-height: 36px;"> <b><a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" style="color: #818f98; text-decoration: none;" target="_blank">Learning Center &rarr;</a></b>
+
+                                                    </td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td style="font-family: Helvetica, arial, sans-serif; color: #818f98; font-size: 16px; line-height: 24px; padding-top: 0;">Access a growing collection of articles and tutorials on email design and strategy.</td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td bgcolor="#222222" align="center">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+                <td style="padding: 20px 0px 20px 0px;">
+                  <table width="500" border="0" cellspacing="0" cellpadding="0" align="center" class="responsive-table">
+                    <tr>
+                      <td width="18" valign="middle" class="mobile-hide">
+                        <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/">
+                          <img alt="Litmus" src="http://i1.createsend1.com/ei/y/89/1B4/A9E/052117/logodark.gif"
+                          width="138" height="59" style="display: block; font-family: Arial; color: #ffffff; font-size: 14px;"
+                          border="0">
+                        </a>
+                      </td>
+                      <td width="40">&nbsp;</td>
+                      <td align="left" width="342" valign="middle" style="font-size: 12px; line-height: 18px; font-family: Helvetica, Arial, sans-serif; color:#999999; -webkit-text-size-adjust: none"><span class="appleFooter" style="color:#999999; -webkit-text-size-adjust: none">675 Massachusetts Ave., Cambridge, MA 02139, USA</span>
+                        <br>
+                        <a href="http://xxxxxx.xxxxxxxxxx0.xxx/x/x-x-xxxxx-xxxxxxxxx-x/" class="original-only"
+                        style="color: #999999; text-decoration: none; -webkit-text-size-adjust: none">Unsubscribe</a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <style>
+        @media print{ #_t { background-image: url('https://x0xxx0xx.xxxxxx.xxx/x0xxx0xx?x&x=xx.xxxxxxxxxxxxx@xxxxx.xxx');}} div.OutlookMessageHeader {background-image:url('https://x0xxx0xx.xxxxxx.xxx/x0xxx0xx?x&x=xx.xxxxxxxxxxxxx@xxxxx.xxx')} table.moz-email-headers-table {background-image:url('https://x0xxx0xx.xxxxxx.xxx/x0xxx0xx?x&x=xx.xxxxxxxxxxxxx@xxxxx.xxx')} blockquote #_t {background-image:url('https://x0xxx0xx.xxxxxx.xxx/x0xxx0xx?x&x=xx.xxxxxxxxxxxxx@xxxxx.xxx')} #MailContainerBody #_t {background-image:url('https://x0xxx0xx.xxxxxx.xxx/x0xxx0xx?x&x=xx.xxxxxxxxxxxxx@xxxxx.xxx')}
+      </style>
+      <div id="_t"></div>
+      <img src="https://g7xty3bk.emltrk.com/g7xty3bk?d=dd.subscriptions@gmail.com"
+      width="1" height="1" border="0" />
+      <img src="https://createsend1.com/t/y-o-tuext-jrokjihky/o.gif" style="height:1px !important; width:1px !important; border: 0 !important; margin: 0 !important; padding: 0 !important"
+      width="1" height="1" border="0" alt="" />
+  </body>
+
+</html>

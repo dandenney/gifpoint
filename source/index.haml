@@ -1,195 +1,555 @@
 %slides
 
-  %slide.slide--title(section)
-    .slide-content
-      .middle.tac
-        %h1.mbxs GIFPoint
-        %p.oph Drew Barontini &mdash; @drewbarontini
-
-  %slide.slide--translateX
-    .slide-content
-      .middle.middle--lrg.tac
-        %h1.mbxs Slide Title
-        %p This is standard slide.
-
-  %slide.slide--subdue.slide--translateY
-    .slide-content
-      .middle.middle--lrg.tac
-        %h1.mbxs.tci.tsa Cool Slide Title
-        %p.tci It has a shadow and stuff!
-
   %slide.slide--light(section)
     .slide-content
       .middle.tac
-        %h1.mbxs Light
-        %p This is a light slide.
+        %h1.mbxs Responsive Email Design and Tooling
+        %p
+          %a{ href: "http://twitter.com/dandenney" } @dandenney
+
+  %slide.slide--fade(img='#{image_path('bg-uncle-sam.jpg')}')
+    .slide-content
+      .middle.tac
+        %h1.mbxs Goal for Today
+        %p
+          Get you excited to learn about creating emails so that our inboxes get better.
+    %p.source
+      http://darrellgambler.com/wp-content/uploads/2013/06/Product-Photos-1659.jpg
+
+  %slide.slide--fade.slide--fade--dark(img='#{image_path('screen-git-real.jpg')}')
+    .slide-content
+      .middle.tac
+        %h3
+          %strike.db.tcs.tfh.ttu Designer
+        %h1.mbxs
+          Front-end Dev
+
+  %slide.slide--fade.slide--fade--error(img='#{image_path('bg-jason.gif')}')
+    .slide-content
+      .middle.tac
+        %h1.mbxs You do da email
+
+  %slide.slide--light(img='#{image_path('bg-no.gif')}')
+    .slide-content
+      .tac
+        %h1.mbxs HTML Email?
+
+    %p.source
+      http://giphy.com/gifs/gl0qCmIqfEJoc
+
+  %slide.slide--fade.slide--fade--error(img='#{image_path('bg-people.jpg')}')
+    .slide-content
+      .middle.tac
+        %h1 I <3 people!
+
+  %slide(img='#{image_path('bg-shares.png')}')
+    .slide-content
+
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-dollar-bills.gif')}')
+    .slide-content
+      .middle.tac
+        %h1 Revenue Tracking
+
+    %p.source http://giphy.com/gifs/qi8Yhj4pKcIec
+
+  %slide.slide--light
+    .slide-content
+      .middle.tac
+        %h1 Designing Communication
+
+  %slide.slide--fade.slide--fade--warning(img='#{image_path('bg-kevin-mandeville.jpg')}')
+    .slide-content
+      %h1 Kevin Mandeville
+      %p
+        @kevingotbounce
+
+  %slide(img='#{image_path('bg-litmus-community.gif')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-email-conf.gif')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-ofa.gif')}')
+    .slide-content
 
   %slide.slide--dark
     .slide-content
       .middle.tac
-        %h1.mbxs Dark
-        %p This is a dark slide.
+        =image_tag 'bg-house-of-cards.gif'
 
-  %slide.slide--subdue
+  %slide(img='#{image_path('screen-old-newsletter.jpg')}')
+    .slide-content
+
+  %slide(img='#{image_path('screen-old-invoice.jpg')}')
+    .slide-content
+
+  %slide(img='#{image_path('screen-first-newsletter.jpg')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-mastering-github.png')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-zombies.png')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-group-invite.png')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-past-due.png')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-cancel.gif')}')
+
+  %slide
     .slide-content
       .middle.tac
-        %h1.mbxs Subdued
-        %p This is a subdued slide.
+        =image_tag 'bg-error.jpg', style: "height: 600px !important; width: auto;"
+
+  %slide
+    .slide-content
+      .middle
+        %blockquote
+          You might might want to check out the coding in your own email before trying to sell me on teaching me to code.
+
+  %slide.slide--fade.slide--fade--dark(img='#{image_path('bg-jason-rodriguez.jpg')}')
+    .slide-content
+      .middle.tac
+        %blockquote
+          It's most important to know your audience, where they are opening, and build and test for that.
+        %p - Jason Rodriguez
+
+  %slide(img='#{image_path('bg-stats.jpg')}')
+    .slide-content
+
+  %slide(img='#{image_path('bg-css.png')}')
+    .slide-content
+
+  %slide.slide--fade(img='#{image_path('bg-yahoo.jpg')}')
+    .slide-content
+      .middle.tac
+        %h1 Gmail, Yahoo, Outlook.com
+        %p No linked stylesheets
+
+  %slide.slide--fade(img='#{image_path('bg-gmail.png')}')
+    .slide-content
+      .middle.tac
+        %h1 Gmail
+        %p "No" style tag in the head
+
+  %slide.slide--fade(img='#{image_path('bg-outlook.png')}')
+    .slide-content
+      .middle.tac
+        %h1 Outlook
+        %p No positioning support
+
+  %slide.slide--fade(img='#{image_path('bg-tables.gif')}')
+    .slide-content
+      .middle
+        %h1.tac Tables
+        :code
+
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td>Tables for Layout</td>
+            </tr>
+          </table>
+    %p.source
+      http://giphy.com/gifs/qOVZOYP1d2zBu
+
+  %slide(img='#{image_path('bg-jumbotron.png')}')
+
+  %slide(img='#{image_path('bg-jumbotron-code.png')}')
+
+  %slide
+    .slide-content
+      .middle
+        .mhc{ style: "width: 50%;" }
+          :code
+            <div class="content">
+        .mhc.tcs{ style: "width: 50%;" }
+          :code
+              <div class="header">...</div>
+              <div class="jumbotron">...</div>
+        .mhc{ style: "width: 50%;" }
+          :code
+              <div class="row marketing">
+                <div class="col-lg-6"></div>
+                <div class="col-lg-6"></div>
+              </div>
+        .mhc.tcs{ style: "width: 50%;" }
+          :code
+              <div class="footer">...</div>
+        .mhc{ style: "width: 50%;" }
+          :code
+            </div>
+
+  %slide
+    .slide-content
+      .middle
+        .mhc{ style: "width: 50%;" }
+          :code
+            <table>
+              <tr>
+                <td>Column 1</td>
+                <td>Column 2</td>
+              </tr>
+            </table>
+
+  %slide
+    .slide-content
+      .mhc{ style: "width: 50%;" }
+        :code
+          <table>
+            <tr>
+              <td>
+                <table class="header">
+                  <tr>
+                    <td>Column 1</td>
+                  </tr>
+                </table>
+                <table class="jumbotron">
+                  <tr>
+                    <td>Column 1</td>
+                  </tr>
+                </table>
+                <table class="row marketing">
+                  <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>Column 1</td>
+                    <td>Column 2</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+
+  %slide
+    .slide-content
+      :code
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <table border="0" cellspacing="0" cellpadding="0" class="header">
+                <tr>
+                  <td>Column 1</td>
+                </tr>
+              </table>
+              <table border="0" cellspacing="0" cellpadding="0" class="jumbotron">
+                <tr>
+                  <td>Column 1</td>
+                </tr>
+              </table>
+              <table border="0" cellspacing="0" cellpadding="0" class="row marketing">
+                <tr>
+                  <td>Column 1</td>
+                  <td>Column 2</td>
+                </tr>
+              </table>
+              <table border="0" cellspacing="0" cellpadding="0" class="footer">
+                <tr>
+                  <td>Column 1</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+  %slide.slide--fade.slide--fade--error(img='#{image_path('bg-tables-hurt.gif')}')
+    .slide-content
+      .middle.tac
+        %h1 Tables Can Hurt
+    %p.source
+      http://giphy.com/gifs/IHLTjUVlQuOOI
+
+  %slide.slide--dark
+    .slide-content
+      .middle.tac
+        %h1 Style
+        = image_tag "css.gif"
+
+  %slide.slide--fade(img='#{image_path('bg-hamlet.jpg')}')
+    .slide-content
+      .middle.tac
+        %h1 To Automate Inlining or Not to Automate Inlining
+    %p.source
+      http://images.cinemaring.com/upload/upload_screenshots/images/cr_films/1/9/2/193e9c0c6f89d91ea0631a314fb3422a.jpg
+
+  %slide.slide--fade.slide--fade--warning(img='#{image_path('bg-ethan.jpg')}')
+    .slide-content
+      .middle.tac
+        %h1 What About Responsive?
+    %p.source
+      https://www.flickr.com/photos/40054618@N03/5140728113/
+
+  %slide.slide--fade
+    .slide-content
+      .middle.tac
+        %p My approach is...
+        %h1 Think Mobile First, Write Desktop First
 
   %slide.slide--success
     .slide-content
       .middle.tac
-        %h1.mbxs Success
-        %p This is a success slide.
+        %h2.tfh.ttu Varied Client Support
+        %h2.tfh.ttu Tables for Layout
+        %h2.tfh.ttu Inline CSS
 
-  %slide.slide--error
+  %slide
+    .g.mh
+      .g-b.g-b--3of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014", width: "320" }
+      .g-b.g-b--5of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014", width: "800" }
+
+  %slide
+    .g.mh
+      .g-b.g-b--3of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014-table-outline", width: "320" }
+      .g-b.g-b--5of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014-table-outline", width: "800" }
+
+  %slide
+    .g.mh
+      .g-b.g-b--3of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014-row-outline", width: "320" }
+      .g-b.g-b--5of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/blend-conf-2014-row-outline", width: "800" }
+
+  %slide
+    .g.mh
+      .g-b.g-b--3of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/global", width: "320" }
+      .g-b.g-b--5of8.mh.tac
+        %iframe.mhc{ frameborder: "0", height: "100%", src: "http://localhost:4567/assets/iframes/global", width: "800" }
+
+  %slide.slide--fade.slide--fade--error(img='#{image_path('bg-742.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Error
-        %p This is an error slide.
+        %h1 742 Lines
 
-  %slide.slide--warning
+  %slide.slide--fade(img='#{image_path('bg-code.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Warning
-        %p This is a warning slide.
+        %h1 Code Time
 
-  %slide(section)
-    .slide-content
-      %h1.mbxs List of Things
-      %ul
-        %li One thing
-        %li Here's another thing
-        %li And another
-
-  %slide.noTransition
-    .slide-content
-      %h1.mbxs List of Things
-      .g
-        .g-b.g-b--1of2
-          %ul
-            %li One thing
-            %li Here's another thing
-            %li And another
-        .g-b.g-b--1of2
-          %ul
-            %li Oh man! Another thing
-            %li Here's another thing
-            %li And, finally, another
-
-  %slide.slide--scale(section)
-    .slide-content
-      .middle.middle--lrg.tac
-        = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
-
-  %slide.slide--translateY.slide--video
+  %slide.slide--fade
     .slide-content
       .middle.tac
-        .slide-video
-          %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
+        %h1.mbxs A few Tips
+        %ul.nb.tci
+          %li Pretend margin doesn't exist
+          %li Use padding, but only on &lt;td&gt;
+          %li Apply as much style as possible to &lt;table&gt; or &lt;td&gt;
 
-  %slide(section)
+  %slide
     .slide-content
-      .middle.middle--auto
-        :code
-          # lang: sass
+      :code
+        # lang: html
+        <h1 style='#3e4243 font-size: 32px; margin: 0;'>Header Level 1</h1>
+        <h2 style='#3e4243 font-size: 32px; margin: 0;'>Header Level 2</h2>
+        ...
 
-          // *************************************
-          //
-          //   Card
-          //   -> Individual style containers
-          //
-          // *************************************
-
-          .card
-            @extend .bci
-            @extend .por
-            @extend .ram
-            padding: $b-whitespace
-
-  %slide(section)
+  %slide
     .slide-content
-      .bottom
-        %blockquote.mbxs
-          What would happen if I put some longer, more thought-provoking text
-          here that fills up more space?
-        %p &mdash; Drew Barontini
+      :code
+        # lang: css
+        @media (max-width: 600px) {
+        /* Typography */
+        table {
+          font-size: 14px !important;
+        }
+        h1 {
+          font-size: 20px !important;
+        }
+        h2 {
+          font-size: 20px !important;
+        }
+        ...
 
-  %slide.slide--fade(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg' section)
+  %slide
+    .slide-content
+      :code
+        # lang: html
+        <img alt='placeholder rectangle' src='/images/placeholder-rectangle.png' width='560'>
+      :code
+        # lang: css
+        @media (max-width: 600px) {
+        img {
+          max-width: 100% !important;
+        }
+
+  %slide
+    .slide-content
+      :code
+        # lang: html
+        <table border='0' cellpadding='0' cellspacing='0' class='flex-size' style="color: #3e4243; font-family: 'Open Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;" width='600'>
+
+      :code
+        # lang: css
+
+        @media (max-width: 600px) {
+          /* Makes fixed width items flexible */
+          .flex-size {
+            width: 100% !important;
+          }
+        }
+
+  %slide.oys
+    .slide-content.slide-content--s.oys
+
+      .tac
+        %iframe.mhc{ frameborder: "0", height: "550", src: "http://localhost:4567/assets/iframes/content", width: "800" }
+
+      :code
+        # lang: html
+
+          <!-- ===================================== -->
+          <!-- Content Name -->
+          <!-- ===================================== -->
+          <table border='0' cellpadding='0' cellspacing='0' class='flex-size' style="color: #3e4243; font-family: 'Open Sans', Helvetica, Tahoma, sans-serif; font-size: 16px; line-height: 1.4;" width='600'>
+            <!-- Spacer -->
+            <tr>
+              <td colspan='3' height='25'></td>
+            </tr>
+            <!-- ===================================== -->
+            <!-- Content -->
+            <!-- ===================================== -->
+            <tr>
+              <td width='20'></td>
+              <td align='left'>
+                <img alt='placeholder rectangle' src='http://localhost:4567/assets/iframes/images/placeholder-rectangle.png' style='display: block;' width='560'>
+              </td>
+              <td width='20'></td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+              <td colspan='3' height='5'></td>
+            </tr>
+            <tr>
+              <td width='20'></td>
+              <td align='left'>
+                <h1 style='margin: 0; padding-bottom: 5px;'>This is a thing that exists</h1>
+                Here is some information about it and then after that there is a button for you to click to find out more and do something.
+              </td>
+              <td width='20'></td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+              <td colspan='3' height='15'></td>
+            </tr>
+            <tr>
+              <td width='20'></td>
+              <td align='center'>
+                <!-- ===================================== -->
+                <!-- Button -->
+                <!-- ===================================== -->
+                <div><!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#dc563e">
+                    <w:anchorlock/>
+                    <center>
+                  <![endif]-->
+                      <a href="#"
+                style="background-color:#dc563e;border-radius:4px;color:#ffffff;display:inline-block;font-weight:300;line-height:40px;text-transform: uppercase;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Do Something</a>
+                  <!--[if mso]>
+                    </center>
+                  </v:roundrect>
+                <![endif]--></div>
+              </td>
+              <td width='20'></td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+              <td colspan='3' height='15'></td>
+            </tr>
+            <!-- ===================================== -->
+            <!-- Closing -->
+            <!-- ===================================== -->
+            <tr>
+              <td width='20'></td>
+              <td align='left'>
+                Thanks,
+                <br>
+                Emayll
+              </td>
+              <td width='20'></td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+              <td colspan='3' height='25'></td>
+            </tr>
+          </table>
+
+  %slide.slide--fade.slide--fade--warning(img='#{image_path('bg-imma-let-you-finish.jpg')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded background image.
+        %h1 I was gonna finish
+        %p But Action Rocket put out the best layout in HTML Email
+    %p.source http://www.pickywallpapers.com/1400x1050/female-celebrities/taylor-swift/imma-let-you-finish-wallpaper/download/
 
-  %slide.slide--fade.slide--fade--dark(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, dark background image.
 
-  %slide.slide--fade.slide--fade--light(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+        %h4.tfh.ttu Hybrid Coding redux – raising the bar
+
+        .g
+          .g-b.g-b--3of8
+            %iframe.mhc{ frameborder: "0", height: "400", src: "http://localhost:4567/assets/iframes/hybrid-coding", width: "330" }
+
+          .g-b.g-b--5of8
+            %iframe.mhc{ frameborder: "0", height: "400", src: "http://localhost:4567/assets/iframes/hybrid-coding", width: "800" }
+
+    %p.source http://labs.actionrocket.co/the-hybrid-coding-approach-2
+
+  %slide.slide--fade.slide--fade--error(img='#{image_path('bg-no-2.gif')}')
+    .slide-content
+      .middle
+        %h1 ICANHAZ
+        %ul.nb.tci.mlf.plf
+          %li.mlf Update images?
+          %li.mlf All my emails in one location?
+          %li.mlf Single layout with partials or includes?
+          %li.mlf Preprocessors?
+
+  %slide.slide--fade.slide--fade--warning
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, light background image.
+        %h1 Global Assets
+        %p.mtm
+          =image_tag 'code-school-logo.png', class: 'dib'
+          =image_tag 'social-twitter.png', class: 'dib mlm'
+          =image_tag 'social-facebook.png', class: 'dib mlm'
+          =image_tag 'email_social_youtube.png', class: 'dib mlm'
+          =image_tag 'email_social_gplus.png', class: 'dib mlm'
 
-  %slide.slide--fade.slide--fade--subdue(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-emayll.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, subdued background image.
+        %h1 Emayll
+        %p <strike>DRY</strike> RYALAP
 
-  %slide.slide--fade.slide--fade--success(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-organization.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, success background image.
+        %h1 Organization
 
-  %slide.slide--fade.slide--fade--error(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-layout.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, error background image.
+        %h1 Layout
 
-  %slide.slide--fade.slide--fade--warning(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-variables.png')}')
     .slide-content
       .middle.tac
-        %h1.mbxs Slide Title
-        %p This is a faded, warning background image.
+        %h1 Variables?
+        %p (In Atom)
 
-  %slide.slide--dark(img='http://gificiency.com/m/angry-batman.gif' section)
-    .slide-content
-      .bottom
-        %h1 GIF
-        %p A fullscreen GIF image.
-
-  %slide.slide--fade.slide--fade--error(img='http://gificiency.com/m/angry-batman.gif')
-    .slide-content
-      .bottom
-        %h1 GIF
-        %p A fullscreen GIF image with fade.
-
-  %slide.slide--fade.slide--fade--light(img='http://gificiency.com/m/dance-abed.gif')
-    .slide-content
-      .middle.middle--med.tac
-        %h1.mbxs GIF
-        %p This is some more description text.
-
-  %slide.slide--dark.slide--tile(img='http://gificiency.com/m/what-bored.gif')
+  %slide.slide--fade.slide--fade--success(img='#{image_path('bg-haml.png')}')
     .slide-content
       .middle.tac
-        .card.card--dark
-          %h1 Slide Title
-          %p A fullscreen, tiled GIF image.
-
-  %slide.slide--fade.slide--fade--dark(img='http://gificiency.com/m/happy-hulk.gif')
-    .slide-content
-      %h1.mbxs GIF
-      %p This is some more description text.
-
-  %slide(img='http://gificiency.com/m/excited-parks.gif')
-    .slide-content
-      .bottom.full.tac
-        .card
-          %p= link_to 'http://github.com/drewbarontini/gifpoint', 'http://github.com/drewbarontini/gifpoint'
-
+        %h1 Preprocessors
